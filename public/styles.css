@@ -1,33 +1,6 @@
 * {
     box-sizing: border-box;
-}
-
-html {
-    scroll-behavior: smooth;
-}
-
-h1 {
-    font-size: 3.5em;
-}
-
-h2 {
-    font-size: 2.7em;
-}
-
-h3 {
-    font-size: 2em;
-}
-
-p {
-    font-size: 1.25em;
-}
-
-ul {
-    list-style: none;
-}
-
-li {
-    font-size: 1.5em;
+    margin: 0;
 }
 
 body {
@@ -35,12 +8,21 @@ body {
     margin: 0;
 }
 
+html {scroll-behavior: smooth;}
+
+h1 {font-size: 3.5em;}
+h2 {font-size: 2.7em;}
+h3 {font-size: 2em;}
+p {font-size: 1.25em;}
+ul {list-style: none;}
+li {font-size: 1.5em;}
+
 button {
-    font-size: 1.5em;
+    font-size: 1.25em;
     font-weight: bold;
     padding: 10px 30px;
-    border-radius: 10px;
-    border: 1px solid rgba(0, 0, 0, 0.5);
+    border-radius: 5px;
+    border: 1px solid rgba(0, 0, 0, 0.3);
     box-shadow: 2px 2px 10px rgba(0, 0, 0, 0.5);
     color: white;
     background-color: blueviolet;
@@ -66,7 +48,7 @@ button {
 
 .header__div--logo {
     margin: 0;
-    padding: 25px;
+    padding: 25px 30px;
     font-weight: bold;
     color: blueviolet;
     font-size: 1.6em;
@@ -105,17 +87,23 @@ button {
     flex-direction: column;
     height: 90vh;
     color: white;
-    background-image: linear-gradient(0grad,
+    background-image: linear-gradient(
+            0deg,
             rgba(0, 0, 0, 0.5),
-            rgba(0, 0, 0, 0.5)), url(/images/code-abstract-computer.jpg);
+            rgba(0, 0, 0, 0.5)
+            )
+            ,url(/images/code-abstract-computer.jpg);
     background-repeat: no-repeat;
     background-size: cover;
     background-position: center center;
-
 }
 
 .banner h1 {
     color: white;
+}
+
+.banner button{
+    font-size: 1.75em;
 }
 
 .somosProYa__img {
@@ -134,7 +122,7 @@ button {
 }
 
 .nuestrosprogramas .carta {
-    padding: 150px 0px;
+    padding: 150px 12px;
 }
 
 .nuestrosprogramas h2 {
@@ -147,10 +135,10 @@ button {
 }
 
 .nuestrosprogramas .carta {
-    background-repeat: no-repeat;
+    background-position: center center;
     background-size: cover;
-    padding: 50px;
-    margin: 20px;
+    padding: 50px 0px;
+    margin: 30px;
     border-radius: 15px;
 }
 
@@ -172,9 +160,9 @@ button {
             rgba(0, 0, 0, 0.5)), url(/images/python.jpg);
 }
 
-#caracteristicas {
+.caracteristicas__div {
     text-align: center;
-    padding: 200px 12px;
+    padding: 250px 12px;
 }
 
 #caracteristicas li {
@@ -188,7 +176,7 @@ button {
     justify-content: center;
     align-items: center;
     text-align: center;
-    background-color: rgb(39, 30, 30);
+    background-color: rgb(30, 30, 30);
     color: white;
     height: 80vh;
 }
@@ -198,7 +186,7 @@ button {
 }
 
 #aplicaya button{
-    font-size: 15vh;
+    font-size: 5vh;
 }
 
 .footer{
@@ -217,4 +205,54 @@ button {
     display: flex;
     justify-content: center;
     align-items: flex-end;
+}
+
+
+/* MEDIA */
+@media (min-width:720px) {
+.header{
+    position: fixed;
+    width: 100%;
+}
+    
+.header__div{
+    flex-direction: row;
+    justify-content: space-between;
+}
+
+.header__nav{
+    flex-direction: row;
+    padding-bottom: 0;
+    padding-right: 20px;
+}
+
+.somosProYa__container{
+    display: flex;
+    justify-content: space-evenly;
+
+}
+
+.somosProYa__texto{
+    width: 50%;
+    max-width: 600px;
+    text-align: initial;
+    padding-left: 30px;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+}
+
+.somosProYa h2{
+    margin-top: 0px;
+}
+
+.somosProYa__container__img{
+    background-image: url('/images/programmer.jpg');
+    background-size: cover;
+    background-position: center center;
+    height: 500px;
+    width: 400px;
+}
+
+
 }
