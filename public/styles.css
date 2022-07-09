@@ -1,0 +1,220 @@
+* {
+    box-sizing: border-box;
+}
+
+html {
+    scroll-behavior: smooth;
+}
+
+h1 {
+    font-size: 3.5em;
+}
+
+h2 {
+    font-size: 2.7em;
+}
+
+h3 {
+    font-size: 2em;
+}
+
+p {
+    font-size: 1.25em;
+}
+
+ul {
+    list-style: none;
+}
+
+li {
+    font-size: 1.5em;
+}
+
+body {
+    font-family: roboto, sans-serif;
+    margin: 0;
+}
+
+button {
+    font-size: 1.5em;
+    font-weight: bold;
+    padding: 10px 30px;
+    border-radius: 10px;
+    border: 1px solid rgba(0, 0, 0, 0.5);
+    box-shadow: 2px 2px 10px rgba(0, 0, 0, 0.5);
+    color: white;
+    background-color: blueviolet;
+}
+
+.banner h1{
+    color: white;
+    font-size: 1.6;
+}
+
+.button:hover {
+    background-color: rgb(101, 33, 165);
+}
+
+.header__div {
+    max-width: 1400px;
+    margin: auto;
+}
+
+.header {
+    background-color: rgb(245, 245, 245);
+}
+
+.header__div--logo {
+    margin: 0;
+    padding: 25px;
+    font-weight: bold;
+    color: blueviolet;
+    font-size: 1.6em;
+}
+
+.header__div {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.header__nav {
+    display: flex;
+    flex-direction: column;
+    text-align: center;
+    padding-bottom: 25px;
+}
+
+.header a {
+    padding: 5px 12px;
+    text-decoration: none;
+    font-weight: bold;
+    color: black;
+}
+
+.header a:hover {
+    color: blueviolet
+}
+
+/* HERO BANNER */
+.banner {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    text-align: center;
+    flex-direction: column;
+    height: 90vh;
+    color: white;
+    background-image: linear-gradient(0grad,
+            rgba(0, 0, 0, 0.5),
+            rgba(0, 0, 0, 0.5)), url(/images/code-abstract-computer.jpg);
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: center center;
+
+}
+
+.banner h1 {
+    color: white;
+}
+
+.somosProYa__img {
+    text-align: center;
+    padding: 200px 12px;
+}
+
+.color--acento {
+    color: blueviolet;
+}
+
+.nuestrosprogramas {
+    background-color: rgb(30, 30, 30);
+    color: white;
+    text-align: center;
+}
+
+.nuestrosprogramas .carta {
+    padding: 150px 0px;
+}
+
+.nuestrosprogramas h2 {
+    margin-top: 0;
+    font-size: 3.2em;
+}
+
+.nuestrosprogramas p {
+    display: none;
+}
+
+.nuestrosprogramas .carta {
+    background-repeat: no-repeat;
+    background-size: cover;
+    padding: 50px;
+    margin: 20px;
+    border-radius: 15px;
+}
+
+.carta:first-child {
+    background-image: linear-gradient(0grad,
+            rgba(0, 0, 0, 0.5),
+            rgba(0, 0, 0, 0.5)), url(/images/frontEnd.jpg);
+}
+
+.carta:nth-child(2) {
+    background-image: linear-gradient(0grad,
+            rgba(0, 0, 0, 0.5),
+            rgba(0, 0, 0, 0.5)), url(/images/fullStack.jpg);
+}
+
+.carta:nth-child(3) {
+    background-image: linear-gradient(0grad,
+            rgba(0, 0, 0, 0.5),
+            rgba(0, 0, 0, 0.5)), url(/images/python.jpg);
+}
+
+#caracteristicas {
+    text-align: center;
+    padding: 200px 12px;
+}
+
+#caracteristicas li {
+    margin: 16px 0;
+    font-weight: bold;
+}
+
+#aplicaya {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+    background-color: rgb(39, 30, 30);
+    color: white;
+    height: 80vh;
+}
+
+#aplicaya h2{
+    font-size: 9vh;
+}
+
+#aplicaya button{
+    font-size: 15vh;
+}
+
+.footer{
+    background-color: rgb(230, 230, 230);
+}
+
+.footer p{
+    margin: 0;
+    padding: 12px;
+    color: rgb(100, 100, 100);
+
+}
+
+.footer {
+    height: 150px;
+    display: flex;
+    justify-content: center;
+    align-items: flex-end;
+}
